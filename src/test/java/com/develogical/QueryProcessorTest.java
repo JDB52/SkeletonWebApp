@@ -30,11 +30,11 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("What is 22 plus 54?"), containsString("76"));
   }
 
-//  @Test
-//  public void knowsLargestFrom19_5_98() throws Exception {
-//    assertThat(queryProcessor.process("Which of the following numbers is the largest: 19, 5, 98?"), containsString("98"));
-//  }
-//
+  @Test
+  public void knowsLargestFrom19_5_98() throws Exception {
+    assertThat(queryProcessor.process("Which of the following numbers is the largest: 19, 5, 98?"), containsString("98"));
+  }
+
 //  @Test
 //  public void knowsPlayersName() throws Exception {
 //    assertThat(queryProcessor.process(""), containsString(""));

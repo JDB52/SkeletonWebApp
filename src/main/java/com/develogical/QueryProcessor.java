@@ -39,6 +39,15 @@ public class QueryProcessor {
       return largest;
     }
 
+    if (query.toLowerCase().contains("multiplied")) {
+      String[] queryArray = query.split(" ");
+      Integer num1 = Integer.parseInt(queryArray[2]);
+      String num2AsString = queryArray[5].replace("?", "");
+      Integer num2 = Integer.parseInt(num2AsString);
+      String total = String.valueOf(num1 * num2);
+      return total;
+    }
+
     return "";
   }
 }

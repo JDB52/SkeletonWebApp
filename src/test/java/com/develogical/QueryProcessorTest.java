@@ -35,8 +35,8 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("Which of the following numbers is the largest: 19, 5, 98?"), containsString("98"));
   }
 
-//  @Test
-//  public void knowsPlayersName() throws Exception {
-//    assertThat(queryProcessor.process(""), containsString(""));
-//  }
+  @Test
+  public void knows43MultipliedBy32() throws Exception {
+    assertThat(queryProcessor.process("What is 43 multiplied by 32?"), containsString("1376"));
+  }
 }

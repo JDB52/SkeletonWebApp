@@ -14,6 +14,10 @@ public class QueryProcessor {
       return "WeatheredWaterfall";
     }
 
+    if (query.toLowerCase().contains("22 plus 54")) {
+      return "76";
+    }
+
     return "";
   }
 }

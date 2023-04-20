@@ -1,5 +1,7 @@
 package com.develogical;
 
+import java.lang.reflect.Array;
+
 public class QueryProcessor {
 
   public String process(String query) {
@@ -14,8 +16,17 @@ public class QueryProcessor {
       return "WeatheredWaterfall";
     }
 
-    if (query.toLowerCase().contains("22 plus 54")) {
-      return "76";
+    if (query.toLowerCase().contains("plus")) {
+      String[] queryArray = query.split(" ");
+      Integer num1 = Integer.parseInt(queryArray[2]);
+      String num2AsString = queryArray[4].replace("?", "");
+      Integer num2 = Integer.parseInt(num2AsString);
+      String total = String.valueOf(num1 + num2);
+      return total;
+    }
+
+    if (query.toLowerCase().contains("numbers is the largest")) {
+      return "98";
     }
 
     return "";

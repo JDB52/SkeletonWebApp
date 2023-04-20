@@ -31,8 +31,8 @@ public class QueryProcessorTest {
   }
 
 //  @Test
-//  public void knowsPlayersName() throws Exception {
-//    assertThat(queryProcessor.process(""), containsString(""));
+//  public void knowsLargestFrom19_5_98() throws Exception {
+//    assertThat(queryProcessor.process("Which of the following numbers is the largest: 19, 5, 98?"), containsString("98"));
 //  }
 //
 //  @Test
